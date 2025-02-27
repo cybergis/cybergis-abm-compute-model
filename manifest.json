@@ -1,0 +1,20 @@
+{
+    "name": "CyberGIS-ABM",
+    "container": "lsabm.sif",
+    "pre_processing_stage": "cd /becky/test && ./test_cases",
+    "execution_stage": "ls",
+    "post_processing_stage": "cp /becky/test/*.jpg $result_folder/",
+    "slurm_input_rules": {
+        "time": {
+                "max": 30,
+                "min": 20,
+                "default_value": 20,
+                "step": 1,
+                "unit": "Minutes"
+            }
+    },
+    "modules": ["intel/19.0.5.281", "mvapich2/2.3.6"],
+    "require_upload_data": false,
+    "supported_hpc": ["anvil_community"],
+    "default_hpc": "anvil_community"
+}

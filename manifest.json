@@ -13,7 +13,10 @@
             "unit": "Minutes"
         },
         "modules": {
-            "type": "string_input",
+            "type": "string_option",
+            "options": [
+                "intel/19.0.5.281 mvapich2/2.3.6"
+            ],
             "default_value": "intel/19.0.5.281 mvapich2/2.3.6"
         }
     },

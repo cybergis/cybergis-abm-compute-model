@@ -12,7 +12,10 @@
             "step": 1,
             "unit": "Minutes"
         },
-        "modules": "intel/19.0.5.281 mvapich2/2.3.6"
+        "modules": {
+            "type?": "string_input",
+            "default_value": "intel/19.0.5.281 mvapich2/2.3.6"
+        }
     },
     "require_upload_data": false,
     "supported_hpc": [

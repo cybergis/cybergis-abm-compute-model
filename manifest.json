@@ -2,8 +2,8 @@
     "name": "CyberGIS-ABM",
     "container": "lsabm.sif",
     "pre_processing_stage": "cd /becky/cybergisabm_compute/test && ./test_cases",
-    "execution_stage": "ls",
-    "post_processing_stage": "cp /becky/cybergisabm_compute/test/*.jpg $result_folder/",
+    "execution_stage": "echo ${result_folder}",
+    "post_processing_stage": "cp /becky/cybergisabm_compute/test/*.jpg /job/result/",
     "slurm_input_rules": {
         "time": {
             "max": 30,

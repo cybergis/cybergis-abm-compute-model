@@ -11,12 +11,12 @@
             "default_value": 20,
             "step": 1,
             "unit": "Minutes"
-        }
+        },
+        "modules": [
+            "intel/19.0.5.281",
+            "mvapich2/2.3.6"
+        ]
     },
-    "modules": [
-        "intel/19.0.5.281",
-        "mvapich2/2.3.6"
-    ],
     "require_upload_data": false,
     "supported_hpc": [
         "anvil_community"
